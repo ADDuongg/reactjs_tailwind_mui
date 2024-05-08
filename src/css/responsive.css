@@ -1,0 +1,279 @@
+
+@media (max-width: 885px) {
+    .background-contact{
+        margin-top: 20px;
+    }
+    .divCardService {
+
+        width: 100%;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #aboutUs{
+        margin-top: 55rem;
+    }
+    .divCardTeam{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact{
+        margin-top: 60rem;
+    }
+    .divContentFooter{
+        flex-wrap: wrap;
+        padding-left: 10px;
+        justify-content: start;
+        align-items: start;
+        padding-top: 10px;
+    }
+    .divIcon{
+        align-items: center;
+    }
+    .footer-infor{
+        margin-left: 10rem;
+    }
+    .sociation{
+        margin: 0;
+        position: absolute;
+        bottom: 6rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .bg-footer{
+        padding-top: 2rem;
+    }
+    .btnToTop{
+        margin-top: 0;
+    }
+    
+}
+
+
+@media (max-width: 670px) {
+    .bg-footer{
+        padding-top: 0;
+    }
+    .wrapper{
+        padding: 0;
+    }
+    .copyright{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .contentAboutUs > .sub-title{
+        font-size: 20px;
+    }
+    .picture-aboutus{
+        width: 25rem;
+    }
+    .iconFooter > i{
+        font-size: 20px;
+    }
+    .divImage > img{
+        width: 100%;
+    }
+    .clinic{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        height: auto;
+    }
+    .btnDetail{
+        margin-top: 10px;
+    }
+    .established{
+        
+        width: 100%;
+        font-size: 20px;
+        padding: 4px;
+    }
+    
+    .contentAboutUs > .content{
+        font-size: 10px;
+        width: 50%;
+    }
+    .divButton{
+        display: flex;
+        justify-content: space-around;
+    }
+    .btn-learnMore{
+        width: 160px;
+    }
+    .divWatch{
+        width: 160px;
+    }
+    .divIcon{
+        justify-content: center;
+        display: flex;
+        margin: 0;
+    }
+    .divDetailFooter{
+        padding-left: 5rem;
+        margin-bottom: 10px;
+    }
+    .sociation{
+        width: 100%;
+        height: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .iconFooter{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .divTitleContact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divTitleContact > .sub-title{
+        font-size: 20px;
+    }
+    .divTitleContact > .content{
+        font-size: 15px;
+    }
+    .inputContact{
+        width: auto;
+    }
+    .emailInput{
+        width: 80%;
+    }
+    .subjectInput{
+        width: 80%;
+    }
+    .inquiryInput{
+        width: 80%;
+    }
+    .background-contact{
+        width: 100%;
+    }
+    .nameInput{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .formContact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    #main-menu {
+        display: none;
+    }
+    .wrapper{
+        padding-top: 3rem;
+    }
+    .divBtnSlide {
+        margin-top: 30px;
+    }
+
+    #header {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btnContact {
+        display: none;
+    }
+
+    .btnbar {
+        display: block;
+    }
+
+    #main-slider {
+        padding-top: 10rem;
+        flex-direction: column;
+        align-items: center;
+        height: 805px;
+        width: 100%;
+    }
+
+    #content {
+        margin: 0;
+    }
+
+    #coreServices {
+        width: 90%;
+        height: 100%;
+    }
+
+    .title-content>.dumpText {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .divContentAboutUs {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        display: flex;
+        padding-top: 10rem;
+        
+    }
+    .contentAboutUs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #aboutUs {
+        width: 100%;
+        /* height: auto; */
+    }
+    #our-team{
+        padding-top: 10rem;
+    }
+    .divButton{
+        margin-top: 10px;
+    }
+    .divContentContact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 10;
+        position: absolute;
+        padding: 0;
+        align-items: center;
+        justify-content: start;
+    }
+    #contact{
+        width: 100%;
+    }
+    .bg-footer {
+        position: absolute;
+        top: 29rem;
+        width: 100%;
+        height: 705.34px;
+        gap: 0px;
+        background-image: url('../images/Footer\ BG.png');
+        background-repeat: no-repeat;
+        z-index: 11;
+        background-size: cover;
+        padding-top: 3rem;
+    }
+    .bottom-footer {
+        position: absolute;
+        bottom: -29rem;
+        width: 100%;
+        height: 125px;
+       
+        background: #0D165C;
+        z-index: 2;
+    }
+    
+    
+}
