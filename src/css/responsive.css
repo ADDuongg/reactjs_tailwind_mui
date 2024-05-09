@@ -13,7 +13,7 @@
         
     }
     #aboutUs{
-        margin-top: 55rem;
+        margin-top: 2rem;
     }
     .divCardTeam{
         display: flex;
@@ -226,17 +226,26 @@
         padding-top: 10rem;
         
     }
+
+    .picture-aboutus{
+        width: 100%;
+        margin-top: 5rem;
+    }
     .contentAboutUs{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+    .picture-aboutus{
+        width: 100%;
     }
     #aboutUs {
         width: 100%;
         /* height: auto; */
     }
     #our-team{
-        padding-top: 10rem;
+        padding-top: 12rem;
     }
     .divButton{
         margin-top: 10px;
@@ -253,6 +262,7 @@
     }
     #contact{
         width: 100%;
+        margin-bottom: 27rem;
     }
     .bg-footer {
         position: absolute;
