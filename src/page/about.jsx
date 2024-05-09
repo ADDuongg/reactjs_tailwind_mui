@@ -38,7 +38,7 @@ const About = () => {
                 <div className='divBg'>
 
                 </div>
-                <OurTeam />
+                <OurTeam css={{}} />
                 {/* <div id="our-team1">ssssss</div> */}
             </div>
 
@@ -54,9 +54,9 @@ const About = () => {
             </div>
 
 
-            <div className="w-full h-full relative mb-32">
-                <img src={bg3} alt="" className='object-cover opacity-70' />
-                <div className='absolute top-0 text-white z-50 w-full h-auto'>
+            <div className="w-full h-full relative mb-32" style={{backgroundImage: `url(${bg3})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+                {/* <img src={bg3} alt="" className='object-cover opacity-70' /> */}
+                <div className=' text-white z-50 w-full h-auto'>
                     <section id="" className='w-full mx-auto md:h-96 h-auto mb-5'>
 
                         <div className=" md:flex-row md:justify-center mt-32 w-full flex-col flex items-center">
@@ -73,11 +73,11 @@ const About = () => {
                     </section>
                 </div>
 
-                <div className='absolute top-96 text-white z-50 w-full h-auto'>
+                <div className=' text-white z-50 w-full h-auto'>
                     <section id="" className='w-full mx-auto md:h-96 h-auto mb-5'>
 
-                        <div className=" md:flex-row md:justify-center mt-32 w-full flex-col flex items-center">
-                            <div className="contentAboutUs h-full ">
+                        <div className=" md:flex-row md:justify-center  md:mt-32 mt-40 w-full flex-col flex items-center  ">
+                            <div className="contentAboutUs h-full md:order-1 order-2">
                                 <div className="title">{apiAboutUs.title}</div>
                                 <div className="text-colorPurple font-bold w-11/12 lg:text-3xl my-4 text-lg lg:text-start text-center">{apiAboutUs.subTitle}</div>
                                 <div className="content lg:text-3xl my-4 text-lg lg:text-start text-center">{apiAboutUs.content}
@@ -85,21 +85,21 @@ const About = () => {
                                 </div>
                                 <div className="content mt-5 lg:text-3xl my-4 text-lg lg:text-start text-center">{apiAboutUs.subContent}</div>
                             </div>
-                            <img src={picAbout2} alt="" className="w-3/12" />
+                            <img src={picAbout2} alt="" className="w-3/12 md:order-2 order-1" />
 
 
                         </div>
                     </section>
                 </div>
 
-                <div className='absolute  z-50 w-full h-auto' style={{top: '56rem'}}>
+                <div className=' z-50 w-full h-auto md:mt-0 mt-10' style={{top: '56rem'}}>
                     <div className='flex flex-col items-center'>
                         <div className='text-colorPink font-bold'>Our Client</div>
                         <div className='font-bold text-colorPurple text-4xl'>Well-known agencíe</div>
                         <div className='text-colorGray font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
                     </div>
 
-                    <div className="flex w-4/6 mx-auto justify-between mt-16">
+                    <div className="grid grid-cols-5 w-4/6 mx-auto mt-16">
                         {logo.map((item,index) => (
                             <img key={index} src={item} alt="" />
                         ))}

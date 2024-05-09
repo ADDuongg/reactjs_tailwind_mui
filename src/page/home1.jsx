@@ -14,8 +14,8 @@ function Home1() {
       <MainSlide/>
       <MainServices/>
       <AboutUs/>
-      <OurTeam/>
-      <Contact/>
+      <OurTeam css={{}}/>
+      <Contact css={{}} />
     </Layout>
   );
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import useForm from '../../hook/useForm';
 import imgContact from '../../images/img-contact.png'
-const Contact = () => {
+const Contact = (props: any) => {
+    const {mt} = props.css
     const initialValues = {
         firstName: '',
         lastName: '',
@@ -16,7 +17,7 @@ const Contact = () => {
     const { formData, handleChange, handleSubmit, errors } = useForm(initialValues, submitForm);
 
     return (
-        <section id="contact">
+        <section id="contact" className={`${mt ? 'mt-60' : ''}`}>
             <div className="background-contact"></div>
             <div className="divContentContact">
                 <img src={imgContact} alt="" className="picture-contact" />

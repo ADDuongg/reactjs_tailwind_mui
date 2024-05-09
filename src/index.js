@@ -10,6 +10,11 @@ import {
 import Home1 from './page/home1';
 import Home2 from './page/home2';
 import About from './page/about';
+import Service from './page/service';
+import Gallery from './page/gallery';
+import Team from './page/team';
+import Blog from './page/blog';
+import Contact from './page/contact';
 
 
 const router = createBrowserRouter([
@@ -26,8 +31,28 @@ const router = createBrowserRouter([
     element: <Home2/>,
   },
   {
-    path: "/About",
+    path: "/about",
     element: <About/>,
+  },
+  {
+    path: "/service",
+    element: <Service/>,
+  },
+  {
+    path: "/gallery",
+    element: <Gallery/>,
+  },
+  {
+    path: "/team",
+    element: <Team/>,
+  },
+  {
+    path: "/blog",
+    element: <Blog/>,
+  },
+  {
+    path: "/contact",
+    element: <Contact/>,
   },
 ]);
 

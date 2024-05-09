@@ -14,8 +14,8 @@
 }
 
 /* header */
-.modalHeader{
-    height: 300px;
+.modalHeader {
+    height: auto;
     background-color: white;
     position: sticky;
     top: 0;
@@ -25,26 +25,36 @@
     justify-content: space-between;
     padding: 2rem;
 }
-.item-modal{
+
+.item-modal {
     margin-bottom: 10px;
     cursor: pointer;
     padding: 10px;
     border-radius: 10px;
 }
-.item-modal:hover{
+
+.item-modal:hover {
     background-color: var(--gray-color);
     color: white;
 }
-.btnX{
-    cursor: pointer; height: 40px; width: 40px; border: none; border-radius: 10px;
+
+.btnX {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 10px;
 }
-.btnX:hover{
+
+.btnX:hover {
     background-color: var(--text-color);
     color: white;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
+
 #header {
     display: flex;
     width: 90%;
@@ -59,24 +69,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.btnbar{
+
+.btnbar {
     display: none;
-    padding: 10px; color: black;
+    padding: 10px;
+    color: black;
     cursor: pointer;
     border-radius: 10%;
     border: none;
 }
+
 #logo {
     height: 63px;
     width: 258px;
 }
 
-#main-menu {
-    height: 25px;
-    width: 481px;
-    display: flex;
-    justify-content: space-between;
-}
 
 .menu-item {
     height: 24px;
@@ -120,12 +127,14 @@
     opacity: 0px;
     position: relative;
 }
-.sociationTeam{
+
+.sociationTeam {
     display: flex;
     justify-content: space-between;
     width: 80%;
     color: black;
 }
+
 .bg-footer {
     position: absolute;
     top: 0;
@@ -236,20 +245,41 @@
     line-height: 24px;
     letter-spacing: 0.1em;
     text-align: right;
-    
+
 }
-.divBg{
+
+.divBg {
     background-image: url('../images/bgAbout.png');
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
     /* height: 100%; */
 }
-.bg2{
+
+.bg2 {
     background: #09115699;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.divPicService8After {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #09115699; 
+    z-index: 1;
+}
+.divPicGallery10After {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #09115699; 
+    z-index: 1;
 }

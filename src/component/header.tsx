@@ -11,7 +11,7 @@ const Header = () => {
         setModalVisible(!modalVisible);
     };
 
-    const menuItem = ['Home', 'About', 'Service', 'Gallery', 'Blog'];
+    const menuItem = ['Home', 'About', 'Service', 'Gallery', 'Blog', 'Gallery', 'Team', 'Contact'];
 
     function handleToggle(name: string) {
         console.log(name);
@@ -26,10 +26,10 @@ const Header = () => {
 
     }
     return (
-        <div >
-            <header id="header" className='w-9/12'>
+        <div className=''>
+            <header id='header' className='w-5/6 absolute flex h-16 justify-between mt-16 mx-auto top-0 left-2/4 -translate-x-2/4 -translate-y-2/4'>
                 <img id="logo" src={MainLogo} alt="" />
-                <div id="main-menu">
+                <div id="main-menu" className='h-6 w-110 flex justify-between'>
                     {menuItem?.map((item, index) => (
                         <div
                             key={index}
@@ -49,7 +49,7 @@ const Header = () => {
                     <i className="fa-solid fa-bars"></i>
                 </button>}
             </header>
-            {modalVisible && <ModalHeader data={{ toggleModal }} />}
+            {modalVisible && <ModalHeader data={{ toggleModal, menuItem }} />}
         </div>
     );
 };

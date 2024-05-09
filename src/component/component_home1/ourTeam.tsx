@@ -2,7 +2,8 @@ import React from 'react';
 import avatar1 from '../../images/avatar1.png';
 import avatar2 from '../../images/avatar2.png';
 import avatar3 from '../../images/avatar3.png';
-const OurTeam = () => {
+const OurTeam = (props: any) => {
+    const {absolute} = props.css
     const fakeAPI = [
         {
             img: avatar1,
@@ -24,7 +25,7 @@ const OurTeam = () => {
         }
     ]
     return (
-        <section id="our-team" >
+        <section id="our-team" className={`${absolute ? 'absolute z-20' : ''} w-full `}>
             <div className="title-team">
                 <div className="title">
                     Professional Teams
@@ -36,7 +37,7 @@ const OurTeam = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
                 </div>
             </div>
-            <section id="coreServices" className=''>
+            <section id="" className=' w-10/12 mx-auto h-full mt-16'>
                 <div className="divCardTeam ">
                     {fakeAPI?.map((item, index) => (
                         <div className={index % 2 !== 0 ? "shadow-card cardTeam" : "cardTeam"} key={index}>
