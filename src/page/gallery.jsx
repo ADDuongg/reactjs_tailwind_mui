@@ -58,7 +58,7 @@ const Gallery = () => {
                 </div>
             </div>
 
-            <div className="w-full md:flex-row flex md:justify-between flex-col items-center mx-auto px-28" style={{backgroundImage: `url(${bgGallery1})`, backgroundPosition: 'right', backgroundRepeat: 'no-repeat'}}>
+            <div className="w-full md:flex-row flex md:justify-between flex-col items-center mx-auto px-28  py-28 " style={{backgroundImage: `url(${bgGallery1})`, backgroundPosition: 'right', backgroundRepeat: 'no-repeat'}}>
                 <div className='w-2/4 md:pt-0 pt-28'>
                     <div className='text-colorPink font-bold'>Get the Qouta</div>
                     <div className='text-colorPurple text-3xl font-bold my-3'>Want to be handled by our professional team immediately?</div>
