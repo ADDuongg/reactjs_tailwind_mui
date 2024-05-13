@@ -32,7 +32,7 @@ const Gallery = () => {
                     </div>
                     <div className="divImgGallery w-full grid md:grid-cols-3 auto-rows-[200px] gap-10">
                         {img?.map((item, index) => (
-                            <img src={item} alt="" className='w-full h-full object-cover rounded-3xl' />
+                            <img key={index} src={item} alt="" className='w-full h-full object-cover rounded-3xl' />
                         ))}
                     </div>
                     <div className='text-colorGray w-4/6 mt-4'>

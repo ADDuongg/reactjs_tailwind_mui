@@ -21,7 +21,7 @@ const Contact = () => {
             <div className="w-4/5 mx-auto lg:flex-row flex-col items-center flex justify-center mt-20">
 
                 <div className={` text-center h-96 w-110 rounded-3xl`}>
-                    <i class="fa-solid fa-location-dot text-colorPurple font-bold text-7xl my-14"></i>
+                    <i className="fa-solid fa-location-dot text-colorPurple font-bold text-7xl my-14"></i>
                     <div className="divDetailTeam ">
                         <div className="card-title">
                             Address
@@ -36,7 +36,7 @@ const Contact = () => {
 
                 </div>
                 <div className={`shadow-card text-center h-96 w-110 rounded-3xl`}>
-                    <i class="fa-solid fa-phone text-colorPurple font-bold text-7xl my-14"></i>
+                    <i className="fa-solid fa-phone text-colorPurple font-bold text-7xl my-14"></i>
                     <div className="divDetailTeam">
                         <div className="card-title">
                             Phone
@@ -51,7 +51,7 @@ const Contact = () => {
 
                 </div>
                 <div className={` text-center h-96 w-110 rounded-3xl`}>
-                    <i class="fa-solid fa-envelopes-bulk text-colorPurple font-bold text-7xl my-14"></i>
+                    <i className="fa-solid fa-envelopes-bulk text-colorPurple font-bold text-7xl my-14"></i>
                     <div className="divDetailTeam">
                         <div className="card-title">
                             Mail

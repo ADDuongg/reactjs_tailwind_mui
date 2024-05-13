@@ -53,7 +53,7 @@ const Blog = () => {
                                         <img src={item.img} alt="" className='w-full h-full object-cover' />
                                     </div>
                                     <div className='w-full h-2/4 p-14'>
-                                        <div className='text-colorPink  text-2xl'><i class="fa-solid fa-folder"></i>  Consultant</div>
+                                        <div className='text-colorPink  text-2xl'><i className="fa-solid fa-folder"></i>  Consultant</div>
                                         <div className="my-6 text-colorPurple font-bold text-4xl">
                                             {item.title}
                                         </div>
@@ -61,7 +61,7 @@ const Blog = () => {
                                             {item.content}
                                         </div>
                                         <div>
-                                            <button className='btn text-white h-14 w-52 font-bold flex items-center justify-center mt-6'>Read More <i class="fa-solid fa-caret-right ml-3 text-xl"></i></button>
+                                            <button className='btn text-white h-14 w-52 font-bold flex items-center justify-center mt-6'>Read More <i className="fa-solid fa-caret-right ml-3 text-xl"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@ const Blog = () => {
                             placeholder="Search here ..."
                             style={{ boxShadow: '0px 25px 50px 25px #F6F7FF' }}
                         />
-                        <button className='absolute right-6 bg-colorPurple text-white rounded-r-3xl top-0 bottom-0 h-full w-20 text-3xl'><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button className='absolute right-6 bg-colorPurple text-white rounded-r-3xl top-0 bottom-0 h-full w-20 text-3xl'><i className="fa-solid fa-magnifying-glass"></i></button>
                     </div>
 
                     <div className="recentPost lg:w-3/4 w-full mt-20 rounded-4xl py-10 lg:ml-24 ml-0" style={{ boxShadow: '0px 25px 50px 25px #F6F7FF' }}>
@@ -117,10 +117,10 @@ const Blog = () => {
                         <div className="w-full px-8">
                             <span className='text-colorPurple font-bold '>Social Connect</span>
                             <div className=" mt-6 flex justify-between">
-                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-700'><i class="fa-brands fa-facebook-f"></i></div>
-                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-500'><i class="fa-brands fa-twitter"></i></div>
-                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-pink-600'><i class="fa-brands fa-instagram"></i></div>
-                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-700'><i class="fa-brands fa-linkedin"></i></div>
+                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-700'><i className="fa-brands fa-facebook-f"></i></div>
+                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-500'><i className="fa-brands fa-twitter"></i></div>
+                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-pink-600'><i className="fa-brands fa-instagram"></i></div>
+                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-700'><i className="fa-brands fa-linkedin"></i></div>
 
                             </div>
                         </div>

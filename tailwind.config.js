@@ -25,7 +25,7 @@ module.exports = {
         98: '30rem',
         110: '50rem',
         'lg': '75rem',
-        'xl': '78rem',
+        'xl': '82rem',
         'xxl': '107rem'
       },
       borderRadius: {
@@ -40,6 +40,9 @@ module.exports = {
       },
       top: {
         150: '55rem'
+      },
+      borderRadius: {
+        'xxxl': '5rem'
       }
     },
   },

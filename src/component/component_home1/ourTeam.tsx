@@ -3,7 +3,7 @@ import avatar1 from '../../images/avatar1.png';
 import avatar2 from '../../images/avatar2.png';
 import avatar3 from '../../images/avatar3.png';
 const OurTeam = (props: any) => {
-    const {absolute} = props.css
+    const { absolute } = props.css
     const fakeAPI = [
         {
             img: avatar1,
@@ -40,7 +40,7 @@ const OurTeam = (props: any) => {
             <section id="" className=' w-10/12 mx-auto h-full mt-16'>
                 <div className="divCardTeam ">
                     {fakeAPI?.map((item, index) => (
-                        <div className={index % 2 !== 0 ? "shadow-card cardTeam" : "cardTeam"} key={index}>
+                        <div className={index % 2 !== 0 ? "shadow-card cardTeam bg-white" : "cardTeam"} key={index}>
                             <img src={item.img} alt="" className="pictureService mx-auto" />
                             <div className="divDetailTeam">
                                 <div className="card-title">
@@ -54,15 +54,16 @@ const OurTeam = (props: any) => {
                                 </div>
                             </div>
                             <div className="iconTeam flex justify-around w-3/5 mx-auto mt-10">
-                                <div className='rounded-full w-14 h-14 shadow flex justify-center items-center'>
-                                    <i className="text-black fa-twitter fa-brands text-2xl"></i>
+                                <div className='rounded-full w-14 h-14 shadow flex justify-center items-center shadow-icon cursor-pointer'>
+                                    <i className="text-black fa-twitter fa-brands text-2xl hover:-translate-y-1 transform transition-all duration-300"></i>
                                 </div>
-                                <div className='rounded-full w-14 h-14 shadow flex justify-center items-center'>
-                                    <i className="text-black fa-brands fa-facebook-f text-2xl"></i>
+                                <div className='rounded-full w-14 h-14 shadow flex justify-center items-center shadow-icon cursor-pointer'>
+                                    <i className="text-black fa-brands fa-facebook-f text-2xl hover:-translate-y-1 transform transition-all duration-300"></i>
                                 </div>
-                                <div className='rounded-full w-14 h-14 shadow flex justify-center items-center'>
-                                    <i className="text-black fa-instagram fa-brands text-2xl"></i>
+                                <div className='rounded-full w-14 h-14 shadow flex justify-center items-center shadow-icon cursor-pointer'>
+                                    <i className="text-black fa-instagram fa-brands text-2xl hover:-translate-y-1 transform transition-all duration-300"></i>
                                 </div>
+
                             </div>
                         </div>
                     ))}

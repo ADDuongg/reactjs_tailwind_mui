@@ -53,7 +53,7 @@ const Service = () => {
 
                     <div id="imageService" className='grid md:grid-cols-3 auto-rows-[250px] w-full gap-16  mb-10'>
                         {imgs?.map((item, index) => (
-                            <div className={`w-full h-full ${index === 1 || index === 2 ? 'md:col-span-2' : ''}`}>
+                            <div key={index} className={`w-full h-full ${index === 1 || index === 2 ? 'md:col-span-2' : ''}`}>
                                 <img src={item.img} alt="" className='w-full h-full' />
                             </div>
                         ))}
@@ -64,7 +64,7 @@ const Service = () => {
 
             <div id='itemService'>
                 {itemServices?.map((item, index) => (
-                    <div className={`grid md:grid-cols-2 md:auto-rows-[400px] auto-rows-[200px] md:mt-0 ${index === 0 ? 'mt-98' : 'mt-10'}`}>
+                    <div key={index} className={`grid md:grid-cols-2 md:auto-rows-[400px] auto-rows-[200px] md:mt-0 ${index === 0 ? 'mt-98' : 'mt-10'}`}>
                         {index % 2 === 0 ? (
                             <>
                                 <div className='flex justify-center items-center'>
@@ -75,7 +75,7 @@ const Service = () => {
                                     <div className='text-colorPink font-bold'>{item.title}</div>
                                     <div className='text-colorPurple font-bold text-4xl my-5 md:w-2/4 w-full md:text-start text-center '>{item.subTitle}</div>
                                     <div className='text-colorGray md:w-3/5 w-full md:text-start text-center'>{item.content}</div>
-                                    <div className='md:justify-start flex justify-center mt-4 w-full'><button className='text-colorPurple font-bold flex items-center'>Make an Appointment <i class="fa-solid fa-angles-right text-colorPink font-bold ml-3 text-xl"></i></button></div>
+                                    <div className='md:justify-start flex justify-center mt-4 w-full'><button className='text-colorPurple font-bold flex items-center'>Make an Appointment <i className="fa-solid fa-angles-right text-colorPink font-bold ml-3 text-xl"></i></button></div>
                                 </div>
                             </>
                         ) : (
@@ -86,7 +86,7 @@ const Service = () => {
                                     <div className='text-colorPink font-bold w-full md:text-start text-center'>{item.title}</div>
                                     <div className='text-colorPurple font-bold w-full text-4xl my-5 md:text-start text-center'>{item.subTitle}</div>
                                     <div className='text-colorGray md:text-start text-center w-full'>{item.content}</div>
-                                    <div className='md:justify-start flex justify-center mt-4 w-full'><button className='text-colorPurple font-bold flex items-center'>Make an Appointment <i class="fa-solid fa-angles-right text-colorPink font-bold ml-3 text-xl"></i></button></div>
+                                    <div className='md:justify-start flex justify-center mt-4 w-full'><button className='text-colorPurple font-bold flex items-center'>Make an Appointment <i className="fa-solid fa-angles-right text-colorPink font-bold ml-3 text-xl"></i></button></div>
                                 </div>
 
 

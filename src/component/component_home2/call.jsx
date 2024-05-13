@@ -18,7 +18,7 @@ const Call = () => {
                                 className="w-3/4 placeholder:pl-4 block flex-1 mx-auto  h-16 border border-colorGray  rounded-l-3xl  py-1.5 pl-1  lg:placeholder:text-xl placeholder:text-gray-400 placeholder:text-sm"
                                 placeholder="Insert your phone number here"
                             />
-                            <button className='absolute right-14 bg-colorPink text-white rounded-r-3xl top-0 bottom-0 h-full w-36 text-3xl'><i class="fa-solid fa-phone-volume"></i></button>
+                            <button className='absolute right-14 bg-colorPink text-white rounded-r-3xl top-0 bottom-0 h-full w-36 text-3xl'><i className="fa-solid fa-phone-volume"></i></button>
                     </div>
                 </div>
             </section>

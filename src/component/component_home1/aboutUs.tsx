@@ -9,7 +9,7 @@ const AboutUs = () => {
     return (
         <section id="aboutUs">
             <div className="background-aboutus"></div>
-            <div className="divContentAboutUs">
+            <div className="divContentAboutUs sm:pl-20 pl-0">
                 <div className="contentAboutUs">
                     <div className="title">About us</div>
                     <div className="sub-title">{apiAboutUs.subTitle}</div>
@@ -22,8 +22,8 @@ const AboutUs = () => {
                         <button className="btn btn-learnMore">
                             Learn More
                         </button>
-                        <div className="divWatch">
-                            <i className="fa-solid fa-circle-play"></i>
+                        <div className="divWatch xl:ml-0 ml-5">
+                            <i className="fa-solid fa-circle-play "></i>
                             <p>Watch Video</p>
                         </div>
                     </div>
