@@ -45,7 +45,7 @@ const Header = () => {
                         <div
                             key={index}
                             onClick={() => handleToggle(item, index)}
-                            className={`h-6 w-auto text-xl cursor-pointer ${index === 0 ? 'text-colorPurple font-bold' : (location.pathname.includes(item.toLocaleLowerCase()) ? 'text-colorPurple font-bold': 'text-gray-400')}`}>
+                            className={`h-6 w-auto text-xl cursor-pointer hover:text-colorPurple ${index === 0 ? 'text-colorPurple font-bold' : (location.pathname.includes(item.toLocaleLowerCase()) ? 'text-colorPurple font-bold': 'text-gray-400')}`}>
                             {item}
                             {index === 0 && <i className="fa-solid fa-plus" style={{ fontSize: '50%' }}></i>}
                             

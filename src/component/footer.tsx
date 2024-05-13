@@ -5,7 +5,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 const Footer = () => {
     const location = useLocation();
     const Navigate = useNavigate();
-    const menuItem = ['Home', 'About', 'Service', 'Gallery', 'Team'];
+    const footerItem1 = ['Home', 'About', 'Service', 'Gallery', 'Team'];
+    const footerItem2 = ['Terms & conditions', 'Privacy Policy', 'Blog', 'Contract'];
     function handleToggle(name: string) {
         console.log(name);
 
@@ -47,19 +48,24 @@ const Footer = () => {
                         <div className="flex flex-col justify-start sm:mt-0 mt-10 sm:mr-0 mr-28">
                             <div className="text-white text-xl">Pages</div>
                             <ul className="ul-page text-[#D7DBFF]">
-                                {menuItem?.map((item,index) => (
-                                <li key={index} onClick={() => handleToggle(item)} className='mr-4 lg:mt-2 mt-1 hover:border-b-2 cursor-pointer transition-all duration-200 ease-out'><i className="fa-solid fa-caret-right  "></i>{item}</li>
+                                {footerItem1?.map((item, index) => (
+                                    <li key={index} onClick={() => handleToggle(item)} className='mr-4 lg:mt-2 mt-1 hover:border-b-2 cursor-pointer transition-all duration-200 ease-out'><i className="fa-solid fa-caret-right  "></i>{item}</li>
                                 ))}
-                                
+
                             </ul>
                         </div>
                         <div className="flex flex-col justify-start sm:mt-0 mt-10">
                             <div className="text-white text-xl ">Informations</div>
                             <ul className="ul-page text-[#D7DBFF]">
-                                <li><i className="fa-solid fa-caret-right mr-4 lg:mt-2  mt-1"></i>Terms & conditions</li>
-                                <li><i className="fa-solid fa-caret-right mr-4 lg:mt-2  mt-1"></i>Privacy policy</li>
-                                <li><i className="fa-solid fa-caret-right mr-4 lg:mt-2  mt-1"></i>Blog</li>
-                                <li><i className="fa-solid fa-caret-right mr-4 lg:mt-2  mt-1"></i>Contact</li>
+                                {footerItem2?.map((item, index) => (
+                                    <li
+                                        key={index}
+                                        onClick={index === 2 || index === 3 ? () => handleToggle(item) : undefined}
+                                        className='mr-4 lg:mt-2 mt-1 hover:border-b-2 cursor-pointer transition-all duration-200 ease-out'
+                                    >
+                                        <i className="fa-solid fa-caret-right"></i>{item}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>
