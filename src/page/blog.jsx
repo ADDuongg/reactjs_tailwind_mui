@@ -132,7 +132,7 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-3/5 mx-auto flex justify-center items-center mt-10'>
+            <div className='w-3/5 mx-auto flex justify-center items-center mt-10 sm:mb-0 mb-10'>
                 {Array.from({ length: 3 }, (_, index) => (
                     <div key={index} onClick={() => handlePaginate(index)} className={`text-center rounded-full p-2 ${paginate === index ? 'bg-[#172176]' : ''} ${paginate === index ? 'text-white' : 'text-colorGray'} cursor-pointer mx-3 h-10 w-10`}>{index + 1}</div>
                 ))}
