@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '../layout/layout';
 import bgBlog from '../images/bgBlog.png'
 import picBlog1 from '../images/picBlog1.png';
@@ -8,6 +8,7 @@ import picBlog4 from '../images/picBlog4.png';
 import picBlog5 from '../images/picBlog5.png';
 import picBlog6 from '../images/picBlog6.png';
 const Blog = () => {
+    const [paginate, setPaginate] = useState(0)
     const dataBlog = [
         {
             img: picBlog1, type: 'Consulation', title: 'How much does a consultation cost at our clinic?', content: 'A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the…'
@@ -30,6 +31,9 @@ const Blog = () => {
             img: picBlog6, date: '01 jan 2021', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'
         },
     ]
+    const handlePaginate = (index) => {
+        setPaginate(index)
+    }
     const tags = ['beauty', 'cute', 'skin', 'glow', 'style', 'clinic', 'stylee', 'greate', 'cutes']
     return (
         <Layout>
@@ -68,6 +72,7 @@ const Blog = () => {
                             </div>
                         ))
                     }
+                    
                 </div>
                 <div className="divSearch lg:w-5/12 w-full lg:mb-0 mb-10">
                     <div className="w-full h-16 relative" >
@@ -126,6 +131,11 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='w-3/5 mx-auto flex justify-center items-center mt-10'>
+                {Array.from({ length: 3 }, (_, index) => (
+                    <div key={index} onClick={() => handlePaginate(index)} className={`text-center rounded-full p-2 ${paginate === index ? 'bg-[#172176]' : ''} ${paginate === index ? 'text-white' : 'text-colorGray'} cursor-pointer mx-3 h-10 w-10`}>{index + 1}</div>
+                ))}
             </div>
         </Layout>
     );
