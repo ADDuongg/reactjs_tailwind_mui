@@ -1,3 +1,4 @@
+const { url } = require('inspector');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -35,6 +36,7 @@ module.exports = {
       height: {
         98: '30rem',
         100: '56rem',
+        104: '59rem',
         'lg': '40rem',
         'xxl': '100rem'
       },

@@ -45,13 +45,13 @@ const Service = () => {
         <Layout>
             <div className='relative w-full h-100 mt-60' style={{ backgroundImage: `url(${bgService})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className='absolute md:top-96 top-3/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-4/5'>
-                    <div className='flex flex-col items-center '>
+                    <div className='flex flex-col items-center lg:mb-10'>
                         <div className='text-colorPink font-bold'>Our Services</div>
                         <div className='text-colorPurple font-bold text-3xl my-5'>We focus on your beauty</div>
                         <div className='text-colorGray '>Lorem ipsum dolor sit amet</div>
                     </div>
 
-                    <div id="imageService" className='grid md:grid-cols-3 auto-rows-[250px] w-full gap-16  mb-10'>
+                    <div id="imageService" className='grid md:grid-cols-3 auto-rows-[250px] w-full gap-16 pt-14  mb-10'>
                         {imgs?.map((item, index) => (
                             <div key={index} className={`w-full h-full ${index === 1 || index === 2 ? 'md:col-span-2' : ''}`}>
                                 <img src={item.img} alt="" className='w-full h-full' />
@@ -64,7 +64,7 @@ const Service = () => {
 
             <div id='itemService'>
                 {itemServices?.map((item, index) => (
-                    <div key={index} className={`grid md:grid-cols-2 md:auto-rows-[400px] auto-rows-[200px] md:mt-0 ${index === 0 ? 'mt-98' : 'mt-10'}`}>
+                    <div key={index} className={`grid lg:grid-cols-2 grid-cols-1 md:auto-rows-[400px] auto-rows-[200px] md:mt-0 ${index === 0 ? 'mt-98' : 'mt-10'}`}>
                         {index % 2 === 0 ? (
                             <>
                                 <div className='flex justify-center items-center'>
@@ -75,7 +75,7 @@ const Service = () => {
                                     <div className='text-colorPink font-bold'>{item.title}</div>
                                     <div className='text-colorPurple font-bold text-4xl my-5 md:w-2/4 w-full md:text-start text-center '>{item.subTitle}</div>
                                     <div className='text-colorGray md:w-3/5 w-full md:text-start text-center'>{item.content}</div>
-                                    <div className='md:justify-start flex justify-center mt-4 w-full'><button className='text-colorPurple font-bold flex items-center'>Make an Appointment <i className="fa-solid fa-angles-right text-colorPink font-bold ml-3 text-xl"></i></button></div>
+                                    <div className='md:justify-start flex justify-center mt-4 w-full group'><button className='text-colorPurple font-bold flex items-center'>Make an Appointment <i className="fa-solid fa-angles-right text-colorPink font-bold ml-3 text-xl group-hover:translate-x-3 transition-all duration-300"></i></button></div>
                                 </div>
                             </>
                         ) : (
@@ -86,7 +86,7 @@ const Service = () => {
                                     <div className='text-colorPink font-bold w-full md:text-start text-center'>{item.title}</div>
                                     <div className='text-colorPurple font-bold w-full text-4xl my-5 md:text-start text-center'>{item.subTitle}</div>
                                     <div className='text-colorGray md:text-start text-center w-full'>{item.content}</div>
-                                    <div className='md:justify-start flex justify-center mt-4 w-full'><button className='text-colorPurple font-bold flex items-center'>Make an Appointment <i className="fa-solid fa-angles-right text-colorPink font-bold ml-3 text-xl"></i></button></div>
+                                    <div className='md:justify-start flex justify-center mt-4 w-full group'><button className='text-colorPurple font-bold flex items-center'>Make an Appointment <i className="fa-solid fa-angles-right text-colorPink font-bold ml-3 text-xl group-hover:translate-x-3 transition-all duration-300"></i></button></div>
                                 </div>
 
 
@@ -110,7 +110,7 @@ const Service = () => {
                     </div>
 
                     <div className='flex items-center'>
-                        <i className="fa-regular fa-circle-play text-9xl text-white shadow-lg"></i>
+                        <i className="fa-regular fa-circle-play text-9xl text-white shadow-lg hover:opacity-40"></i>
                         <div className='text-white text-xl ml-6'>Treatment Videos</div>
                     </div>
                 </div>

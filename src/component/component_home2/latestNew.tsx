@@ -45,15 +45,17 @@ const LatestNew = () => {
                 <div className="w-full mt-8 h-full flex lg:flex-row lg:justify-center flex-col items-center">
                     {fakeAPI?.map((item, index) => (
                         <div className={`shadow-card h-4/5 text-center rounded-2xl w-96 ${index === 1 ? "mx-12 my-12" : ""}`} key={index}>
-                            <img src={item.img} alt="" className="w-full" />
-                            <div className=" mt-14 px-12">
+                            <div className="w-full h-auto overflow-hidden group rounded-t-3xl">
+                                <img src={item.img} alt="" className="w-full group-hover:scale-125 transition-all duration-300" />
+                            </div>
+                            <div className=" mt-14 px-12 md:pb-0 pb-10">
                                 <div className="text-start text-colorPurple font-bold text-lg">
                                     {item.title}
                                 </div>
                                 <div className="text-start text-colorGray mt-4 ">
                                     {item.body}
                                 </div>
-                                <div className='mt-5 text-colorPink font-bold text-sm flex items-center'>Learn more<i className="fa-solid fa-angles-right ml-2"></i></div>
+                                <div className='mt-5 text-colorPink font-bold text-sm flex items-center cursor-pointer group '>Learn more<i className="fa-solid fa-angles-right ml-2 group-hover:translate-x-3 transition-all duration-300"></i></div>
                             </div>
 
                         </div>

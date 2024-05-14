@@ -3,7 +3,7 @@ import React from 'react';
 const Call = () => {
     return (
         <div>
-            <section id='callRequest' className='sm:my-32 mt-10 mb-0'>
+            <section id='callRequest' className='sm:my-32 mt-10 md:mb-8 mb-10'>
                 <div className="flex lg:flex-row lg:justify-center flex-col items-center gap-5">
                     <div className='w-98'>
                         <div className='text-colorPurple font-bold text-3xl'>Request call services</div>

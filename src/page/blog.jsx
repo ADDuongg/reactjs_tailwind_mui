@@ -47,8 +47,8 @@ const Blog = () => {
                 <div className="divBlog lg:w-7/12 w-full ">
                     {
                         dataBlog?.map((item, index) => (
-                            <div key={index} className="divBlog w-full mb-28">
-                                <div className="blogContent w-full rounded-5xl" style={{ boxShadow: '0px 25px 50px 25px #F6F7FF' }}>
+                            <div key={index} className="divBlog w-full mb-28 ">
+                                <div className="blogContent w-full" style={{ boxShadow: '0px 25px 50px 25px #F6F7FF', borderRadius: '3rem' }}>
                                     <div className='w-full h-1/4'>
                                         <img src={item.img} alt="" className='w-full h-full object-cover' />
                                     </div>
@@ -76,14 +76,14 @@ const Blog = () => {
                             name="username"
                             id="username"
                             autoComplete="username"
-                            className="border-0 w-3/5 placeholder:pl-4 block flex-1 mx-auto  h-16   rounded-l-3xl  py-1.5 pl-1  lg:placeholder:text-xl placeholder:text-gray-400 placeholder:text-sm"
+                            className="outline-none border-colorPurple focus:border-2 sm:w-3/5 w-3/4 placeholder:pl-4 block flex-1 sm:mx-auto mx-0 h-16 rounded-l-3xl py-1.5 pl-1 lg:placeholder:text-xl placeholder:text-gray-400 placeholder:text-sm"
                             placeholder="Search here ..."
                             style={{ boxShadow: '0px 25px 50px 25px #F6F7FF' }}
                         />
-                        <button className='absolute right-6 bg-colorPurple text-white rounded-r-3xl top-0 bottom-0 h-full w-20 text-3xl'><i className="fa-solid fa-magnifying-glass"></i></button>
+                        <button className='border-colorPurple hover:opacity-95 absolute right-6 bg-colorPurple text-white rounded-r-3xl top-0 bottom-0 h-full w-20 text-3xl'><i className="fa-solid fa-magnifying-glass"></i></button>
                     </div>
 
-                    <div className="recentPost lg:w-3/4 w-full mt-20 rounded-4xl py-10 lg:ml-24 ml-0" style={{ boxShadow: '0px 25px 50px 25px #F6F7FF' }}>
+                    <div className="rounded-3xl lg:w-3/4 w-full mt-20 rounded-4xl py-10 lg:ml-24 ml-0" style={{ boxShadow: '0px 25px 50px 25px #F6F7FF' }}>
                         <div className="w-full p-8">
                             <span className='text-colorPurple font-bold '>Recent Posts</span>
                             {
@@ -100,27 +100,27 @@ const Blog = () => {
                         </div>
                     </div>
 
-                    <div className="recentPost lg:w-3/4 w-full mt-20 rounded-4xl py-10 lg:ml-24 ml-0" style={{ boxShadow: '0px 25px 50px 25px #F6F7FF' }}>
+                    <div className="rounded-3xl lg:w-3/4 w-full mt-20 rounded-4xl py-10 lg:ml-24 ml-0" style={{ boxShadow: '0px 25px 50px 25px #F6F7FF' }}>
                         <div className="w-full px-8">
                             <span className='text-colorPurple font-bold '>Cloud Tags</span>
                             <div className="grid grid-cols-3 auto-rows-auto gap-4 mt-6">
                                 {
                                     tags?.map((item, index) => (
-                                        <div key={index} className=' text-colorGray rounded-xl h-auto w-full p-3 shadow-md cursor-pointer hover:bg-colorPink hover:text-white'>{item}</div>
+                                        <div key={index} className=' text-colorGray rounded-xl h-auto w-full p-3 cursor-pointer hover:bg-colorPink hover:text-white text-center'>{item}</div>
                                     ))
                                 }
                             </div>
                         </div>
                     </div>
 
-                    <div className="recentPost lg:w-3/4 w-full mt-20 rounded-4xl py-10 lg:ml-24 ml-0" style={{ boxShadow: '0px 25px 50px 25px #F6F7FF' }}>
+                    <div className="rounded-3xl lg:w-3/4 w-full mt-20 rounded-4xl py-10 lg:ml-24 ml-0" style={{ boxShadow: '0px 25px 50px 25px #F6F7FF' }}>
                         <div className="w-full px-8">
                             <span className='text-colorPurple font-bold '>Social Connect</span>
                             <div className=" mt-6 flex justify-between">
-                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-700'><i className="fa-brands fa-facebook-f"></i></div>
-                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-500'><i className="fa-brands fa-twitter"></i></div>
-                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-pink-600'><i className="fa-brands fa-instagram"></i></div>
-                                <div className='rounded-full h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-700'><i className="fa-brands fa-linkedin"></i></div>
+                                <div className='rounded-full shadow-icon h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-700'><i className="fa-brands fa-facebook-f"></i></div>
+                                <div className='rounded-full shadow-icon h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-500'><i className="fa-brands fa-twitter"></i></div>
+                                <div className='rounded-full shadow-icon h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-pink-600'><i className="fa-brands fa-instagram"></i></div>
+                                <div className='rounded-full shadow-icon h-10 p-3 shadow-lg cursor-pointer w-10 flex justify-center items-center hover:text-blue-700'><i className="fa-brands fa-linkedin"></i></div>
 
                             </div>
                         </div>

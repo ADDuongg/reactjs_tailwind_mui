@@ -22,8 +22,8 @@ const AboutUs = () => {
                         <button className="btn btn-learnMore">
                             Learn More
                         </button>
-                        <div className="divWatch xl:ml-0 ml-5">
-                            <i className="fa-solid fa-circle-play "></i>
+                        <div className="divWatch xl:ml-0 ml-5 ">
+                            <i className="fa-solid fa-circle-play hover:text-colorPurple "></i>
                             <p>Watch Video</p>
                         </div>
                     </div>

@@ -49,7 +49,7 @@ const MainServices = () => {
                             <div className="text-colorGray">
                                 {item.body}
                             </div>
-                            <div className='mt-4 text-colorPink font-bold text-sm flex w-auto justify-between items-center'>Learn more<i className="fa-solid fa-angles-right ml-2"></i></div>
+                            <div className='mt-4 text-colorPink font-bold text-sm flex w-auto justify-between items-center group cursor-pointer'>Learn more<i className="fa-solid fa-angles-right ml-2 group-hover:translate-x-3 transition-all duration-300"></i></div>
                         </div>
                     </div>
                 ))}

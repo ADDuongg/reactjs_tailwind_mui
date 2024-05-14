@@ -32,24 +32,24 @@ const Footer = () => {
             <section id="" className="w-full h-[705.34px] relative">
                 <div className="bg-footer absolute top-0 w-full h-[705.34px] z-10" style={{ backgroundImage: `url(${bgfooter})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
 
-                    <div className=" flex lg:justify-evenly justify-start lg:pl-0 pl-10 flex-wrap">
-                        <div className=" flex flex-col text-[#D7DBFF] mr-20">
+                    <div className=" flex lg:justify-evenly justify-start lg:pl-0 pl-20 flex-wrap">
+                        <div className=" flex flex-col text-[#D7DBFF] sm:mr-20 mr-0 ">
                             <div><img src={footerLogo} alt="" /></div>
-                            <div className=" sm:pl-7 sm:pt-10 pl-0 sm:mt-0 mt-3">
+                            <div className=" sm:pl-7 sm:pt-10 pl-0 sm:mt-0 mt-3 lg:mb-1 mb-0">
                                 <span className="text-lg">Beautice <span>is a Beauty Clinic Wordpress Theme.</span></span>
                                 {/* <p className="text-[#D7DBFF]">is a Beauty Clinic WordPress Theme.</p> */}
                                 <p className="text-[#D7DBFF] mt-3">Baker Steet 101, NY, United States.</p>
                                 <div className="flex justify-start text-[#D7DBFF] mt-3">
                                     <p className='italic mr-10'>+521 569 8966.</p>
-                                    <p className='italic'>mail@company.com.</p>
+                                    <p className='italic underline cursor-pointer'>mail@company.com.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col justify-start sm:mt-0 mt-10 sm:mr-0 mr-28">
+                        <div className="flex flex-col justify-start sm:mt-0 mt-10 sm:mr-0 mr-16 ">
                             <div className="text-white text-xl">Pages</div>
                             <ul className="ul-page text-[#D7DBFF]">
                                 {footerItem1?.map((item, index) => (
-                                    <li key={index} onClick={() => handleToggle(item)} className='mr-4 lg:mt-2 mt-1 hover:border-b-2 cursor-pointer transition-all duration-200 ease-out'><i className="fa-solid fa-caret-right  "></i>{item}</li>
+                                    <li key={index} onClick={() => handleToggle(item)} className='mr-4 lg:mt-2 mt-1 cursor-pointer hover:-translate-y-1 transition-all duration-500 ease-out'><i className="fa-solid fa-caret-right  "></i>{item}</li>
                                 ))}
 
                             </ul>
@@ -61,7 +61,7 @@ const Footer = () => {
                                     <li
                                         key={index}
                                         onClick={index === 2 || index === 3 ? () => handleToggle(item) : undefined}
-                                        className='mr-4 lg:mt-2 mt-1 hover:border-b-2 cursor-pointer transition-all duration-200 ease-out'
+                                        className='mr-4 lg:mt-2 mt-1 hover:-translate-y-1 cursor-pointer transition-all duration-500 ease-out'
                                     >
                                         <i className="fa-solid fa-caret-right"></i>{item}
                                     </li>
@@ -70,12 +70,12 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex justify-end pr-10 mr-12">
-                        <button className="text-white rounded-lg h-6 w-6 p-5 bg-colorPink flex justify-center items-center lg:mt-20 mt-10 " onClick={handleToTop}><i className="fa-solid fa-arrow-up"></i></button>
+                    <div className="flex justify-end pr-10 sm:mr-12 mr-0 lg:mt-20 sm:mt-10 mt-0">
+                        <button className="text-white rounded-lg h-6 w-6 p-5 bg-colorPink flex justify-center items-center  hover:bg-pink-50 hover:text-colorPink" onClick={handleToTop}><i className="fa-solid fa-arrow-up"></i></button>
                     </div>
 
                     <div className=" sm:w-70 w-full mx-auto lg:pt-8 pt-0 flex sm:flex-row flex-col justify-evenly items-center">
-                        <div className="iconFooter flex w-1/3 justify-between">
+                        <div className="iconFooter flex w-1/3 sm:justify-between justify-center">
                             <i className="fa-brands  fa-facebook text-white text-3xl"></i>
                             <i className="fa-brands  fa-twitter text-white text-3xl"></i>
                             <i className="fa-brands  fa-linkedin-in text-white text-3xl"></i>

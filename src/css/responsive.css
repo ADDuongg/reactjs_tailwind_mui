@@ -100,8 +100,9 @@
     }
     
     .contentAboutUs > .content{
-        font-size: 10px;
-        width: 50%;
+        font-size: 15px;
+        width: 91%;
+        margin: 0 auto;
     }
     .divButton{
         display: flex;
@@ -132,6 +133,7 @@
     .iconFooter{
         width: 80%;
         margin-bottom: 10px;
+        justify-content: space-evenly;
     }
     .divTitleContact{
         display: flex;
@@ -145,16 +147,16 @@
         font-size: 15px;
     }
     .inputContact{
-        width: auto;
+        width: 50%;
     }
     .emailInput{
-        width: 80%;
+        width: 100%;
     }
     .subjectInput{
-        width: 80%;
+        width: 100%;
     }
     .inquiryInput{
-        width: 80%;
+        width: 100%;
     }
     .background-contact{
         width: 100%;
@@ -275,7 +277,7 @@
         background-repeat: no-repeat;
         z-index: 11;
         background-size: cover;
-        padding-top: 5rem;
+        padding-top: 4rem;
     }
     .bottom-footer {
         position: absolute;
